@@ -4,8 +4,7 @@ import type { Metadata } from 'next';
 import { Montserrat, Oxanium } from 'next/font/google';
 
 export const metadata: Metadata = {
-  title: 'Code Craft Summit 2025',
-  description: 'Evento NLW 2025',
+  title: 'CodeCraft',
 };
 
 const oxanium = Oxanium({
