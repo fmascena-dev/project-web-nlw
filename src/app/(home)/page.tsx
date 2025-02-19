@@ -1,10 +1,11 @@
 import Image from 'next/image';
-import logo from '../assets/logo.svg';
+import logo from '../../assets/logo.svg';
 import { Radio } from 'lucide-react';
+import SubscriptionForm from './subscription-form';
 
 export default function Home() {
   return (
-    <div className="min-h-dvh flex flex-col justify-center gap-16">
+    <div className="min-h-dvh flex flex-col justify-center gap-12 top-7">
       <div className="flex flex-col gap-8 items-center md:items-start">
         <Image src={logo} alt="devstage" width={108.5} height={30} />
 
@@ -36,7 +37,7 @@ export default function Home() {
           </p>
         </div>
 
-        {/* <SubscriptionForm /> */}
+        <SubscriptionForm />
       </div>
     </div>
   );
