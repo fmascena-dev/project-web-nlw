@@ -1,5 +1,10 @@
 import Image from 'next/image';
+
 import logo from '../../assets/logo.svg';
+import Ranking from './ranking';
+import Stats from './stats';
+import InviteLinkInput from './invite-link-input';
+
 
 export default function InvitePage() {
   return (
@@ -27,8 +32,14 @@ export default function InvitePage() {
               inscrições:
             </p>
           </div>
+
+          <InviteLinkInput />
+
+          <Stats />
         </div>
       </div>
+
+      <Ranking />
     </div>
   );
 }
